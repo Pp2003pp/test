@@ -13,9 +13,13 @@
             <div class="logo">
                 <h1>CodeChallenge</h1>
             </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">Dark Mode</button>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#featured">Featured Problem</a></li>
                     <li><a href="#contests">Contests</a></li>
                     <li><a href="#timeline">Timeline</a></li>
                     <li><a href="#register">Register</a></li>
@@ -24,7 +28,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero-banner">
         <div class="container">
             <h2>Test Your Coding Skills</h2>
             <p>Join our upcoming programming contest and compete with the best coders</p>
@@ -67,6 +71,29 @@
                 </div>
                 <div class="about-image">
                     <img src="/placeholder.svg?height=300&width=400" alt="Coding Contest">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-problem">
+        <div class="container">
+            <h2>Featured Problem</h2>
+            <div class="problem-card">
+                <h3>Array Sum Challenge</h3>
+                <div class="problem-description">
+                    <p>Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.</p>
+                    <div class="example">
+                        <p><strong>Example:</strong></p>
+                        <p>Input: [3, 6, -2, -5, 7, 3]</p>
+                        <p>Output: 21</p>
+                        <p>Explanation: 7 × 3 = 21</p>
+                    </div>
+                </div>
+                <div class="problem-interaction">
+                    <textarea id="solution-code" placeholder="Write your solution here..."></textarea>
+                    <button id="check-solution" class="btn">Check Solution</button>
+                    <div id="solution-result" class="solution-result"></div>
                 </div>
             </div>
         </div>
@@ -168,6 +195,7 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#featured">Featured Problem</a></li>
                         <li><a href="#contests">Contests</a></li>
                         <li><a href="#timeline">Timeline</a></li>
                         <li><a href="#register">Register</a></li>
