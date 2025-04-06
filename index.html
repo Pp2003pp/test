@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeChallenge - Programming Contest</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Changed CSS filename reference -->
+    <link rel="stylesheet" href="contest-styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
 </head>
 <body>
@@ -13,9 +14,7 @@
             <div class="logo">
                 <h1>CodeChallenge</h1>
             </div>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn">Dark Mode</button>
-            </div>
+            <!-- Removed the theme-toggle div completely, breaking JS functionality -->
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -28,11 +27,13 @@
         </div>
     </header>
 
-    <section class="hero-banner">
+    <!-- Changed class name, breaking CSS styling -->
+    <section class="main-hero">
         <div class="container">
             <h2>Test Your Coding Skills</h2>
             <p>Join our upcoming programming contest and compete with the best coders</p>
-            <div class="countdown" id="countdown">
+            <!-- Changed ID, breaking JS functionality -->
+            <div class="countdown" id="timer-countdown">
                 <div>
                     <span id="days">00</span>
                     <span class="label">Days</span>
@@ -92,7 +93,8 @@
                 </div>
                 <div class="problem-interaction">
                     <textarea id="solution-code" placeholder="Write your solution here..."></textarea>
-                    <button id="check-solution" class="btn">Check Solution</button>
+                    <!-- Changed button ID, breaking JS functionality -->
+                    <button id="verify-solution" class="btn">Check Solution</button>
                     <div id="solution-result" class="solution-result"></div>
                 </div>
             </div>
@@ -102,7 +104,8 @@
     <section id="contests" class="contests">
         <div class="container">
             <h2>Upcoming Contests</h2>
-            <div class="contest-cards" id="contest-list">
+            <!-- Changed ID, breaking JS functionality -->
+            <div class="contest-cards" id="upcoming-contests">
                 <!-- Contest cards will be populated by JavaScript -->
             </div>
         </div>
@@ -147,7 +150,8 @@
     <section id="register" class="register">
         <div class="container">
             <h2>Register for the Contest</h2>
-            <form id="registration-form">
+            <!-- Changed form ID, breaking JS functionality -->
+            <form id="contest-registration-form">
                 <div class="form-group">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" required>
@@ -213,7 +217,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Changed JS filename reference -->
+    <script src="contest-script.js"></script>
 </body>
 </html>
 
